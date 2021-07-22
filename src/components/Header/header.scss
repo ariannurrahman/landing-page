@@ -1,0 +1,45 @@
+@import "../styles//utility//variable.scss";
+
+#header-container {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  color: $text-color !important;
+  z-index: 10;
+  #header-wrapper {
+    height: 100%;
+    display: none;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  #logo-mobile {
+    height: 80%;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  #header-container {
+    display: flex;
+    #header-wrapper {
+      display: flex;
+    }
+    #logo-mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+p {
+  font-size: 14px;
+  color: #a8a5be;
+}
+
+.button-blue {
+  font-size: 14px;
+  background-color: #2d0a89;
+  color: white;
+}
+
+.text-thin-blue {
+  font-size: 14px;
+  color: #2d0a89;
+  font: 400;
+}
+
+.text-thin-gray {
+  font-size: 14px;
+  color: rgba(160, 160, 160, 0.5);
+  font: 400;
+}
+
+.text-thin-gray::-webkit-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray:-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.exit-modal button {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #2d0a89;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #2d0a89;
+  font-weight: 800;
+  word-spacing: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sub-title {
+    font-size: 26px !important;
+  }
+  p {
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-title {
+    font-size: 30px !important;
+  }
+}
+
+footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  background-color: #2d0a89;
+}
+
+#footer-left-image,
+#footer-right-image {
+  z-index: 2;
+}
+
+#footer-left-image {
+  width: 200px;
+  left: -100px;
+  bottom: 0px;
+}
+
+#footer-right-image {
+  width: 200px;
+  right: -100px;
+  bottom: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  #footer-left-image {
+    width: 300px;
+    left: -100px;
+    bottom: 0px;
+  }
+  #footer-right-image {
+    width: 300px;
+    right: -50px;
+    bottom: -50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #footer-left-image {
+    width: 440px;
+    left: -160px;
+    bottom: -100px;
+  }
+  #footer-right-image {
+    width: 440px;
+    right: -200px;
+    bottom: -200px;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

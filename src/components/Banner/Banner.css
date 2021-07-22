@@ -1,0 +1,228 @@
+p {
+  font-size: 14px;
+  color: #a8a5be;
+}
+
+.button-blue {
+  font-size: 14px;
+  background-color: #2d0a89;
+  color: white;
+}
+
+.text-thin-blue {
+  font-size: 14px;
+  color: #2d0a89;
+  font: 400;
+}
+
+.text-thin-gray {
+  font-size: 14px;
+  color: rgba(160, 160, 160, 0.5);
+  font: 400;
+}
+
+.text-thin-gray::-webkit-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray:-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.exit-modal button {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #2d0a89;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #2d0a89;
+  font-weight: 800;
+  word-spacing: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sub-title {
+    font-size: 26px !important;
+  }
+  p {
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-title {
+    font-size: 30px !important;
+  }
+}
+
+.banner-container {
+  height: 90vh;
+  overflow-y: hidden;
+}
+
+.banner-container .banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d0a89;
+  height: 80vh;
+  padding-top: 10vh;
+  position: relative;
+}
+
+.banner-container .banner-wrapper .banner-row {
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#middle-image {
+  width: 100%;
+  height: 100%;
+}
+
+#right-image,
+#left-image {
+  display: none;
+}
+
+.banner-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.banner-desc {
+  z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-container {
+    height: 80vh;
+  }
+  .banner-container .banner-wrapper {
+    height: 60vh;
+  }
+  .banner-container .banner-wrapper .banner-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #middle-image {
+    z-index: 100;
+    padding-top: 12vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+  }
+  .banner-title {
+    position: relative;
+    z-index: 100;
+    padding-top: 10vh;
+    font-size: 32px;
+  }
+  #left-image {
+    display: block;
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+    left: -50px;
+    bottom: 0;
+  }
+  #right-image {
+    display: block;
+    position: absolute;
+    width: 400px;
+    right: -150px;
+    bottom: 80px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner-container {
+    height: 80vh;
+    margin-bottom: 10vh;
+  }
+  .banner-container .banner-wrapper {
+    height: 70vh;
+  }
+  .banner-desc {
+    font-size: 16px;
+  }
+  .banner-title {
+    font-size: 42px;
+  }
+  #middle-image {
+    padding-top: 10vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+  }
+  #right-image {
+    right: -200px;
+    bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .banner-container {
+    height: 90vh;
+    margin-bottom: 10vh;
+  }
+  .banner-container .banner-wrapper {
+    height: 76vh;
+  }
+  .banner-title {
+    letter-spacing: 1px;
+    font-size: 52px;
+    font-weight: 600 !important;
+  }
+  #middle-image {
+    z-index: 100;
+    padding-top: 12vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+  }
+}
+/*# sourceMappingURL=Banner.css.map */

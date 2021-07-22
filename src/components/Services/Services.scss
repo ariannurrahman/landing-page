@@ -1,0 +1,46 @@
+@import "../styles//utility//variable.scss";
+
+#icon-wrapper {
+  @include flex-center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  #icon-image {
+    height: 50%;
+    width: 50%;
+    object-fit: scale-down;
+    color: white;
+    fill: white;
+  }
+}
+
+#arrow-wrapper {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgb(236, 213, 244);
+  border-radius: 50%;
+  right: 10%;
+  bottom: 230px;
+}
+
+#slide-container {
+  scrollbar-width: none;
+}
+@media only screen and (min-width: 768px) {
+  #arrow-wrapper {
+    width: 40px;
+    height: 40px;
+    right: 10%;
+    bottom: 250px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #arrow-wrapper {
+    width: 40px;
+    height: 40px;
+    right: 10%;
+    bottom: 300px;
+  }
+}

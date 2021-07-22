@@ -1,0 +1,74 @@
+p {
+  font-size: 14px;
+  color: #a8a5be;
+}
+
+.button-blue {
+  font-size: 14px;
+  background-color: #2d0a89;
+  color: white;
+}
+
+.text-thin-blue {
+  font-size: 14px;
+  color: #2d0a89;
+  font: 400;
+}
+
+.text-thin-gray {
+  font-size: 14px;
+  color: rgba(160, 160, 160, 0.5);
+  font: 400;
+}
+
+.text-thin-gray::-webkit-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray:-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::-ms-input-placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.text-thin-gray::placeholder {
+  color: rgba(160, 160, 160, 0.5);
+}
+
+.exit-modal button {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #2d0a89;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #2d0a89;
+  font-weight: 800;
+  word-spacing: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sub-title {
+    font-size: 26px !important;
+  }
+  p {
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-title {
+    font-size: 30px !important;
+  }
+}
+/*# sourceMappingURL=variable.css.map */

@@ -1,0 +1,86 @@
+$background-color: rgb(45, 10, 137); // blue
+$text-color-white: rgb(255, 255, 255); //  white
+$text-color-gray: rgba(160, 160, 160, 0.5); //  white
+
+$sub-title-mobile-size: 20px !important;
+$sub-title-tablet-size: 32px !important;
+$sub-title-desktop-size: 40px !important;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-row {
+  @include flex-center;
+  flex-direction: row;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 14px;
+  color: rgb(168, 165, 190);
+}
+
+.button-blue {
+  font-size: 14px;
+  background-color: $background-color;
+  color: white;
+}
+
+.text-thin-blue {
+  font-size: 14px;
+  color: $background-color;
+  font: 400;
+}
+
+.text-thin-gray {
+  font-size: 14px;
+  color: $text-color-gray;
+  font: 400;
+  &::placeholder {
+    color: $text-color-gray;
+  }
+}
+
+.exit-modal {
+  button {
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    color: $background-color;
+  }
+}
+
+.sub-title {
+  font-size: 20px;
+  color: $background-color;
+  font-weight: 800;
+  word-spacing: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sub-title {
+    font-size: 26px !important;
+  }
+  p {
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-title {
+    font-size: 30px !important;
+  }
+}
